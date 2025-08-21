@@ -27,10 +27,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
+      - name: Create index.html redirect
+        run: |
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=./demo/"></head><body><p><a href="./demo/">Click here if not redirected</a></p></body></html>' > index.html
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './demo'
+          path: '.'
       
       - name: Deploy to GitHub Pages
         id: deployment
