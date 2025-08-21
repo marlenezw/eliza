@@ -9,9 +9,19 @@ to emulate a Rogerian psychotherapist.
 ![Demo](./demo.svg)
 (Inputs taken from [Weizenbaum's 1966 paper, pp.1-2.](https://dl.acm.org/doi/10.1145/365153.365168))
 
+# Eliza Pattern Matching Visualizer 
+
+This repo also contains a demo pattern matching vizualizer that you can find here: [visualizer website](https://marlenezw.github.io/eliza/demo/). Take a look at how the response is generated using substitution, rules and regex! 
+
+![patterns](./images/patterns.png)
+
 # Program flow
 
+You can also see the program visualized below! 
+
 ![Flowchart](./flowchart.svg)
+
+
 
 # Download
 ## Requirements
