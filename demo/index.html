@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza Pattern Matching Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Eliza Pattern Matching Visualizer</h1>
+            <p>See how the first chatbot processes your input step by step</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="user-input">Enter your message:</label>
+                <input type="text" id="user-input" placeholder="Try: My mother is always criticizing me" value="My mother is always criticizing me">
+                <button id="process-btn">Process Message</button>
+            </div>
+        </div>
+
+        <div class="visualization-container">
+            <div class="step" id="step1">
+                <h2>Step 1: Word Substitution</h2>
+                <div class="step-content">
+                    <div class="before-after">
+                        <div class="before">
+                            <h3>Original Input:</h3>
+                            <div class="text-box" id="original-text"></div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="after">
+                            <h3>After Substitution:</h3>
+                            <div class="text-box" id="substituted-text"></div>
+                        </div>
+                    </div>
+                    <div class="substitutions-applied" id="substitutions-applied"></div>
+                </div>
+            </div>
+
+            <div class="step" id="step2">
+                <h2>Step 2: Keyword Ranking</h2>
+                <div class="step-content">
+                    <div class="keywords-found" id="keywords-found"></div>
+                    <div class="selected-sentence" id="selected-sentence"></div>
+                </div>
+            </div>
+
+            <div class="step" id="step3">
+                <h2>Step 3: Pattern Matching</h2>
+                <div class="step-content">
+                    <div class="pattern-attempts" id="pattern-attempts"></div>
+                    <div class="pattern-match" id="pattern-match"></div>
+                </div>
+            </div>
+
+            <div class="step" id="step4">
+                <h2>Step 4: Response Generation</h2>
+                <div class="step-content">
+                    <div class="response-construction" id="response-construction"></div>
+                    <div class="final-response" id="final-response"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
